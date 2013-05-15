@@ -1,0 +1,17 @@
+<form method="post" action="/?q=save" id="form_service_edit">
+    <div class="controll-item">
+        <label for="parents">Родительская услуга</label>
+        <select id="parents" name="parents">
+            <option value="0">(нет родительской услуги)</option>
+            <?php $this->helperServicesSelectList($services, 0, 0, $service['parent_id']) ?>
+        </select>
+    </div>
+    <div class="controll-item">
+        <label for="name">Наименование услуги</label>
+        <input type="text" name="name" id="name" value="<?php echo $service['name'] ?>">
+    </div>
+    <div class="tools">
+        <input type="hidden" name="id" id="id" value="<?php echo $service['id'] ?>">
+        <input type="submit" value="Сохранить" onclick="serviceSave(this); return false;">
+    </div>
+</form>

@@ -1,0 +1,116 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+
+.container {
+    width: 755px;
+    margin: 0 auto;
+    border: solid #D9E0E7;
+    border-width: 0px 1px 1px;
+}
+
+.header {
+    padding: 20px 10px 20px 40px;
+    background: #edf1f5;
+    -webkit-box-shadow: inset 0 -4px 2px -2px rgba(0,0,0,0.03);
+    -moz-box-shadow: inset 0 -4px 2px -2px rgba(0,0,0,0.03);
+    box-shadow: inset 0 -4px 2px -2px rgba(0,0,0,0.03);
+}
+
+.content {
+    padding: 20px;
+}
+
+.header h1 {
+    color: #5C7B9B;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.list-services h1 {
+    color: #5C7B9B;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+.list-services {
+    width: 100%;
+}
+
+.body ul {
+    background: #edf1f5;
+    list-style: none;
+}
+
+.body ul li p {
+    padding-left: 20px;
+}
+
+.body ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #D9E0E7;
+    transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+}
+
+.body ul li:hover {
+    border-color: #a0b1e7;
+}
+
+.body ul .controll {
+    float: right;
+}
+
+.body ul .controll a {
+    margin-right: 10px;
+}
+
+.body .child-service {
+    list-style-type: square;
+    color: #5C7B9B;
+    padding-left: 30px;
+}
+
+.body .child-service li {
+    border-bottom-style: dashed;
+}
+
+.body .child-service li p {
+    padding: 0;
+    color: #000;
+}
+
+.preloader {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(/images/preloader.gif);
+}
+
+.info-muted-block {
+    color: #999;
+}
+
+.info-error-block {
+    color: #BE0000;
+}
+
+.menu-bar {
+    padding: 0 0 20px 0;
+}
+
+a {
+    color: #005CFF;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+a:hover {
+    color: #0A00FF;
+}

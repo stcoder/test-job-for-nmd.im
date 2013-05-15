@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Тестовое задание</h1>
+    </div>
+    <div class="content">
+        <div class="menu-bar">
+            <form method="post" action="/?q=create" id="form_service_create">
+                <label for="parents">Родительская услуга</label>
+                <select id="parents" name="parents">
+                    <option value="0">(нет родительской услуги)</option>
+                    <?php $this->helperServicesSelectList($services, 0, 0) ?>
+                </select>
+                <label for="name">Наименование услуги</label>
+                <input type="text" name="name" id="name" value="">
+                <div class="tools">
+                    <input type="submit" value="Добавить">
+                </div>
+            </form>
+        </div>
+        <div class="list-services">
+            <h1>Список услуг</h1>
+            <ul>
+                <li id="service0" class="body">
+                    <?php $this->helperServicesList($services, 0, 0) ?>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="dialog-modal" title="undefined" style="display: none;"></div>
+<script src="/js/common.js"></script>
+</body>
+</html>
